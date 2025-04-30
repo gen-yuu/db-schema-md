@@ -1,8 +1,8 @@
 {
   "DB_HOST": "localhost",
-  "DB_USER": "dbuser",
+  "DB_USER": "user",
   "DB_PASSWORD": "password",
   "DB_PORT": 3306,
-  "DB_NAME": "sampledb",
-  "OUTPUT_FILE" : "table-definition.md"
+  "DB_NAME": "sampled_db",
+  "OUTPUT_FILE" : "schema.md"
 }

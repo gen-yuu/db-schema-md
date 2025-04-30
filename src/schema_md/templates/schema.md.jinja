@@ -1,0 +1,21 @@
+# Database Schema Documentation
+
+{% for tbl in tables %}
+## {{ tbl.Name }} ({{ tbl.Comment or '-' }})
+
+| 論理名 | 物理名 | 型 | キー制約 | Null制約 | その他制約 |
+| :----: | :----: | :----: | :----: | :----: | :----: |
+{% for col in tbl.columns %}
+| {{ col.Comment or ' ' }} | {{ col.Field }} | {{ col.Type }} | {{ col.Key }} | {{ col.Null }} | {{ col.Extra or ('DEFAULT ' ~ col.Default) or ' ' }} |
+{% endfor %}
+
+| インデックス名 | 対象カラム名 | 複合キーのキー順序 |
+| :----: | :----: | :----: |
+{% set prev = None %}
+{% for idx in tbl.indexes %}
+{% set name = idx.Key_name if idx.Key_name != prev else ' ' %}
+| {{ name }} | {{ idx.Column_name }} | {{ idx.Seq_in_index }} |
+{% set prev = idx.Key_name %}
+{% endfor %}
+
+{% endfor %}

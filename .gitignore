@@ -1,5 +1,28 @@
-config.json
-output/*
+# 仮想環境
+.venv/
+venv/
+ENV/
+env/
+
+# Python キャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jinja2 キャッシュ
+*.cache/
+
+# 出力ディレクトリ(sample以外)
+output/
 !output/sample*
-packages/*
-!packages/.gitkeep
+
+# 実際の設定ファイル
+config.json
+
+# パッケージビルド成果物
+build/
+dist/
+*.egg-info/
+
+# macOS
+.DS_Store
