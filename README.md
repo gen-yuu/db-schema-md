@@ -18,7 +18,7 @@
 
 ## 構成
 ```
-your-project/
+db-schema-md/
 ├── Makefile                    # セットアップ・実行用タスク
 ├── requirements.txt            # Python 依存パッケージ一覧
 ├── config_sample.json          # サンプル設定ファイル(DB情報)
