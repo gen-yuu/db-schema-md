@@ -1,4 +1,4 @@
-# table-definition-generator
+# db-schema-md
 
 ## 概要
 `db-schema-md` は、MySQL データベースのスキーマ（テーブル定義・カラム情報・インデックス情報）を **Markdown** 形式で自動出力するコマンドラインツールです。
