@@ -1,4 +1,4 @@
-# table-definition-generator
+# db-schema-md
 
 ## 概要
 `db-schema-md` は，MySQL データベースのスキーマ（テーブル定義・カラム情報・インデックス情報）を **Markdown** 形式で自動出力するコマンドラインツールです．
@@ -25,7 +25,7 @@
 
 ## ディレクトリ構成
 ```
-your-project/
+db-schema-md/
 ├── Makefile                    # セットアップ・実行用タスク
 ├── requirements.txt            # Python 依存パッケージ一覧
 ├── config_sample.json          # サンプル設定ファイル(DB情報)
@@ -44,6 +44,7 @@ your-project/
 │   └── schema.md               # 生成された Markdown
 └── README.md                   # プロジェクト概要（本ファイル）
 ```
+
 
 ## インストール
 リポジトリをクローンしたら，Makefile の setup ターゲットを使って必要な環境構築を行います．
