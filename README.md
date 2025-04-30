@@ -1,4 +1,4 @@
-# table-definition-generator
+# db-schema-md
 
 ## 概要
 MySQLで構築しているRDBのテーブル定義をmarkdown形式で出力するツールです。  
